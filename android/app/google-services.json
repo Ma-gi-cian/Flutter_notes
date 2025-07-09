@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573776737247",
+    "project_id": "hibiscus-flutter",
+    "storage_bucket": "hibiscus-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573776737247:android:06333d739fc1db72994a6a",
+        "android_client_info": {
+          "package_name": "com.example.notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDStbfv4fXIIFbCYw3lMumM0JFhg43OKSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
