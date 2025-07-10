@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
       githubProvider.addScope('repo');
       githubProvider.addScope('user:email');
       
-      
+      await FirebaseAuth.instance.signInWithProvider(githubProvider);
       
     } catch (e) {
       // TODO:Implement error handling
