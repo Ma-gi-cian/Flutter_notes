@@ -199,6 +199,7 @@ class _NotesState extends State<Notes> {
 
             Positioned(
               bottom: 20,
+              // this currently look good -> need help with a more actual positioning
               left: MediaQuery.of(context).size.width / 2 - 28,
               child: FloatingActionButton(
                 onPressed: () {

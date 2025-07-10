@@ -19,8 +19,7 @@ class AuthWrapper extends StatelessWidget {
                 child: CircularProgressIndicator(),
               ),
             );
-          }
-          
+          } // check if there is already user or not if not then LoginPage
           if (snapshot.hasData) {
             return Notes();
           } else {
@@ -45,7 +44,8 @@ class _LoginPageState extends State<LoginPage> {
   Future<void> _signInWithGitHub() async {
     setState(() {
       _isLoading = true;
-    });
+    }); // change in the state using the setState method 
+    // is it a method or a function
 
     try {
       GithubAuthProvider githubProvider = GithubAuthProvider();
@@ -53,13 +53,10 @@ class _LoginPageState extends State<LoginPage> {
       githubProvider.addScope('repo');
       githubProvider.addScope('user:email');
       
-      final UserCredential userCredential = await FirebaseAuth.instance
-          .signInWithProvider(githubProvider);
       
-      print('Signed in as: ${userCredential.user}');
       
     } catch (e) {
-      // Handle errors
+      // TODO:Implement error handling
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Authentication failed: ${e.toString()}'),

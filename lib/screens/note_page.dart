@@ -68,7 +68,6 @@ class _NotePage extends State<NotePage> {
       }
       Navigator.pop(context); // Go back after save
     } catch (e) {
-      print('Error saving note: $e');
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Failed to save note')),
       );
