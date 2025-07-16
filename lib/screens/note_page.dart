@@ -22,7 +22,6 @@ class _NotePage extends State<NotePage> {
     super.initState();
 
     if (widget.note != null) {
-      // Pre-fill for editing
       _titleController.text = widget.note!['title'] ?? '';
       _contentController.text = widget.note!['content'] ?? '';
     }
